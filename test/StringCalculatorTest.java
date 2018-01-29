@@ -33,5 +33,44 @@ public class StringCalculatorTest {
         testString = "A";
         assertEquals(0, stringCalculator.add(testString));
 
+        //Sum of two numbers
+        testString = "0,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "0,9";
+        assertEquals(9, stringCalculator.add(testString));
+        testString = "5,4";
+        assertEquals(9, stringCalculator.add(testString));
+        testString = "9,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "9,9";
+        assertEquals(18, stringCalculator.add(testString));
+
+        //Passing non numbers
+        testString = "#,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "/,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = ":,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "A,0";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "0,#";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "0,/";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "0,:";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "0,A";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "#,#";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "/,/";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = ":,:";
+        assertEquals(0, stringCalculator.add(testString));
+        testString = "A,A";
+        assertEquals(0, stringCalculator.add(testString));
+
+        
     }
 }
