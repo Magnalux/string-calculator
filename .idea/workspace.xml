@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11673a33-359c-47c2-999e-56376ef45be9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/StringCalculatorTest.java" afterPath="$PROJECT_DIR$/test/StringCalculatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringCalculator.java" afterPath="$PROJECT_DIR$/src/StringCalculator.java" />
     </list>
     <ignored path="StringCalculator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/StringCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -67,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/StringCalculatorTest.groovy" />
-        <option value="$PROJECT_DIR$/src/StringCalculator.java" />
         <option value="$PROJECT_DIR$/test/StringCalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/StringCalculator.java" />
       </list>
     </option>
   </component>
@@ -611,12 +611,12 @@
       <option name="number" value="Default" />
       <updated>1517255042653</updated>
       <workItem from="1517255051280" duration="424000" />
-      <workItem from="1517263328592" duration="2550000" />
+      <workItem from="1517263328592" duration="2652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2974000" />
+    <option name="totallyTimeSpent" value="3076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="182" width="1246" height="794" extended-state="0" />
@@ -687,7 +687,7 @@
     <entry file="file://$PROJECT_DIR$/src/StringCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding />
         </state>
       </provider>

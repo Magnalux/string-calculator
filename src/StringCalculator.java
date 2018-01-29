@@ -18,6 +18,14 @@ public class StringCalculator {
 
         int sum = currentChar - '0';
 
+        currentChar = numbers.charAt(1);
+        if (currentChar < '0' || currentChar > '9') {
+            //The current character is not a number so the string cannot be summed
+            return 0;
+        }
+
+        sum += currentChar - '0';
+
         return sum;
     }
 }
