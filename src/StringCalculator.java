@@ -10,22 +10,13 @@ public class StringCalculator {
 
         //Getting the numeric value of a character
 
-        char currentChar = numbers.charAt(0);
-        if (currentChar < '0' || currentChar > '9') {
-            //The current character is not a number so the string cannot be summed
-            return 0;
+        String[] separated = numbers.split(",");
+        int sum = Integer.parseInt(separated[0]);
+
+        if (separated.length == 2) {
+            sum += Integer.parseInt(separated[1]);
+
         }
-
-        int sum = currentChar - '0';
-
-        currentChar = numbers.charAt(1);
-        if (currentChar < '0' || currentChar > '9') {
-            //The current character is not a number so the string cannot be summed
-            return 0;
-        }
-
-        sum += currentChar - '0';
-
         return sum;
     }
 }

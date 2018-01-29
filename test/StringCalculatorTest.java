@@ -18,59 +18,46 @@ public class StringCalculatorTest {
         assertEquals(5, stringCalculator.add(testString));
         testString = "9";
         assertEquals(9, stringCalculator.add(testString));
+        testString = "-123";
+        assertEquals(-123, stringCalculator.add(testString));
+        testString = "123";
+        assertEquals(123, stringCalculator.add(testString));
+        testString = "56547";
+        assertEquals(56547, stringCalculator.add(testString));
 
         //Passing non numbers
         //Middle of lower valued characters
-        testString = "#";
-        assertEquals(0, stringCalculator.add(testString));
-        //Lower bound for check
-        testString = "/";
-        assertEquals(0, stringCalculator.add(testString));
-        //Upper bound for check
-        testString = ":";
-        assertEquals(0, stringCalculator.add(testString));
-        //Middle of higher valued characters
-        testString = "A";
-        assertEquals(0, stringCalculator.add(testString));
+        try {
+            testString = "#";
+            stringCalculator.add(testString);
+            fail();
+        } catch (NumberFormatException e) {}
+        try {
+            testString = "/";
+            stringCalculator.add(testString);
+            fail();
+        } catch (NumberFormatException e) {}
+        try {
+            testString = ":";
+            stringCalculator.add(testString);
+            fail();
+        } catch (NumberFormatException e) {}
+        try {
+            testString = "A";
+            stringCalculator.add(testString);
+            fail();
+        } catch (NumberFormatException e) {}
 
         //Sum of two numbers
         testString = "0,0";
         assertEquals(0, stringCalculator.add(testString));
-        testString = "0,9";
-        assertEquals(9, stringCalculator.add(testString));
-        testString = "5,4";
-        assertEquals(9, stringCalculator.add(testString));
-        testString = "9,0";
+        testString = "0,123";
+        assertEquals(123, stringCalculator.add(testString));
+        testString = "52,44";
+        assertEquals(96, stringCalculator.add(testString));
+        testString = "-123,0";
+        assertEquals(-123, stringCalculator.add(testString));
+        testString = "-123,123";
         assertEquals(0, stringCalculator.add(testString));
-        testString = "9,9";
-        assertEquals(18, stringCalculator.add(testString));
-
-        //Passing non numbers
-        testString = "#,0";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "/,0";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = ":,0";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "A,0";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "0,#";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "0,/";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "0,:";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "0,A";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "#,#";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "/,/";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = ":,:";
-        assertEquals(0, stringCalculator.add(testString));
-        testString = "A,A";
-        assertEquals(0, stringCalculator.add(testString));
-
-        
     }
 }
