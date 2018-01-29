@@ -3,6 +3,7 @@
  */
 public class StringCalculator {
     static int add(String numbers) {
+        //Make sure the string is not empty
         if (numbers.isEmpty()) {
             return 0;
         }

@@ -14,9 +14,24 @@ public class StringCalculatorTest {
         //Sum of one number
         testString = "0";
         assertEquals(0, stringCalculator.add(testString));
-        testString = "9";
-        assertEquals(9, stringCalculator.add(testString));
         testString = "5";
         assertEquals(5, stringCalculator.add(testString));
+        testString = "9";
+        assertEquals(9, stringCalculator.add(testString));
+
+        //Passing non numbers
+        //Middle of lower valued characters
+        testString = "#";
+        assertEquals(0, stringCalculator.add(testString));
+        //Lower bound for check
+        testString = "/";
+        assertEquals(0, stringCalculator.add(testString));
+        //Upper bound for check
+        testString = ":";
+        assertEquals(0, stringCalculator.add(testString));
+        //Middle of higher valued characters
+        testString = "A";
+        assertEquals(0, stringCalculator.add(testString));
+        
     }
 }
