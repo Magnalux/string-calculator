@@ -32,6 +32,6 @@ public class StringCalculatorTest {
         //Middle of higher valued characters
         testString = "A";
         assertEquals(0, stringCalculator.add(testString));
-        
+
     }
 }

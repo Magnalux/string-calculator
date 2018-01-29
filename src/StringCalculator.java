@@ -8,6 +8,16 @@ public class StringCalculator {
             return 0;
         }
 
-        return 1;
+        //Getting the numeric value of a character
+
+        char currentChar = numbers.charAt(0);
+        if (currentChar < '0' || currentChar > '9') {
+            //The current character is not a number so the string cannot be summed
+            return 0;
+        }
+
+        int sum = currentChar - '0';
+
+        return sum;
     }
 }
