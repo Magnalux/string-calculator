@@ -59,5 +59,13 @@ public class StringCalculatorTest {
         assertEquals(-123, stringCalculator.add(testString));
         testString = "-123,123";
         assertEquals(0, stringCalculator.add(testString));
+
+        //Sum of n numbers
+        testString = "123,456,789,0";
+        assertEquals(1368, stringCalculator.add(testString));
+        testString = "-1000,500,400";
+        assertEquals(-100, stringCalculator.add(testString));
+        testString = "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1";
+        assertEquals(25, stringCalculator.add(testString));
     }
 }
