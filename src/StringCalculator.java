@@ -8,14 +8,12 @@ public class StringCalculator {
             return 0;
         }
 
-        //Getting the numeric value of a character
-
+        //Calculate the sum
         String[] separated = numbers.split(",");
-        int sum = Integer.parseInt(separated[0]);
-
-        if (separated.length == 2) {
-            sum += Integer.parseInt(separated[1]);
-
+        int sum = 0;
+        for (int i = 0; i < separated.length; i++) {
+            //Add the value of the current number to the sum
+            sum += Integer.parseInt(separated[i]);
         }
         return sum;
     }
