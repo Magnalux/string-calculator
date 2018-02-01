@@ -67,5 +67,9 @@ public class StringCalculatorTest {
         assertEquals(-100, stringCalculator.add(testString));
         testString = "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1";
         assertEquals(25, stringCalculator.add(testString));
+
+        //testing git
+        testString = "-1.-3,-6,10";
+        assertEquals(0,stringCalculator.add(testString));
     }
 }
